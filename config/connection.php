@@ -13,7 +13,7 @@
     }catch(PDOException $e){
         //APRESENTA O ERRO, caso ocorra erro de conexão 
         $error =  $e->getMessage();
-        echo "Eroo: $error";
+        echo "Erro: $error";
     }
 
 
