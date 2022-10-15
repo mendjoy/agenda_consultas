@@ -17,6 +17,9 @@
         <p class="bold">Data da consulta:</p>
         <p><?=$contact["date"]?></p>
 
+        <p class="bold">Hora da consulta:</p>
+        <p><?=$contact["hour"]?></p>
+
         <p class="bold">Observações:</p>
         <p><?=$contact["observations"]?></p>
     </div>
