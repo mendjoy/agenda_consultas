@@ -21,6 +21,7 @@
                         <th scope="col">Tutor</th>
                         <th scope="col">Telefone</th>
                         <th scope="col">Animal</th>
+                        <th scope="col">Data</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -32,6 +33,7 @@
                             <td scope="row"><?= $contact["name"]?></td>
                             <td scope="row"><?= $contact["phone"]?></td>
                             <td scope="row"><?= $contact["animal"]?></td>
+                            <td scope="row"><?= $contact["date"]?></td>
                             <td class="actions">
                                 <a href="<?=$BASE_URL?>show.php?id=<?= $contact["id"]?>"><i class="fas fa-eye check-icon"></i></a>
                                 <a href="#"><i class="far fa-edit edit-icon"></i></a> 
