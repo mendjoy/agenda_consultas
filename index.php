@@ -18,7 +18,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Id</th>
-                        <th scope="col">Nome</th>
+                        <th scope="col">Tutor</th>
                         <th scope="col">Telefone</th>
                         <th scope="col">Animal</th>
                         <th scope="col"></th>
