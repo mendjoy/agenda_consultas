@@ -1,6 +1,6 @@
 <?php
     include_once("templates/header.php");
-    include_once("config/connection.php");
+    include_once("config/process.php");
 ?>
 
     <div class="container">
@@ -10,9 +10,43 @@
         <?php endif;?>
 
         <h1 id="main-title">Agenda de consultas</h1>
+        
+        <!--Verifica se há dados no banco e mostra na tela-->
         <?php if(count(($contacts))> 0):?>
-            <p>Tem contatos</p>
+            <table class="table" id="contacts-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Animal</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php foreach($contacts as $contact) : ?>
+                        <tr>
+                            <td scope="row"><?= $contact["id"]?></td>
+                            <td scope="row"><?= $contact["name"]?></td>
+                            <td scope="row"><?= $contact["phone"]?></td>
+                            <td scope="row"><?= $contact["animal"]?></td>
+                            <td class="actions">
+                                <a href="#"><i class="fas fa-eye check-icon"></i></a>
+                                <a href="#"><i class="far fa-edit edit-icon"></i></a> 
+                                <button type="submit"><i class="fas fa-times delete-icon"></i></button>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </tbody>
+            </table>
+        <?php else: ?>
+            <p id="empty-list-text">Ainda não há dados na agenda
+                <a href="<?=$BASE_URL?>create.php">Clique aqui para adicionar</a>.
+            </p>
         <?php endif;?>
+
+
 
     </div>
 
