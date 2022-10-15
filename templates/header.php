@@ -1,6 +1,5 @@
 <?php
     include_once("config/url.php");
-    include_once("process.php");
 
     //limpar a mensagem 
     if(isset($_SESSION['msg'])){
