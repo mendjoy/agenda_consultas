@@ -114,5 +114,20 @@
 #create-form, #edit-form{
     max-width: 500px;
     margin: 0 auto;
-
 }
+
+.delete-form {
+    display: inline-block;
+}
+
+/*mobile*/
+
+@media screen  and (max-width: 768px){
+
+    #home-link {
+        display: none;
+    }
+    
+}
+
+

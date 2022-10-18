@@ -15,7 +15,7 @@
         <p><?=$contact["animal"]?></p>
 
         <p class="bold">Data da consulta:</p>
-        <p><?=$contact["date"]?></p>
+        <p><?=$contact["day"]?></p>
 
         <p class="bold">Hora da consulta:</p>
         <p><?=$contact["hour"]?></p>

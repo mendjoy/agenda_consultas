@@ -8,7 +8,7 @@
 
             <form action="<?=$BASE_URL?>config/process.php" method="POST" id="create-form">
 
-                <input type="hidden" name="type" value="Create">
+                <input type="hidden" name="type" value="create">
                 <div class="form-group">
                     <label for="name">Nome do tutor:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome do tutor" required>
@@ -23,14 +23,18 @@
                     <input type="text" class="form-control" id="animal" name="animal" placeholder="Digite o nome do animal" required>
                 </div>
                 <div class="form-group">
-                    <label for="data">Data da consulta:</label>
-                    <input type="date" class="form-control" id="data" name="data"  required>
+                    <label for="date">Data da consulta:</label>
+                    <input type="text" class="form-control" id="date" name="data" placeholder="Insira a data da consulta"  required>
+                </div>
+                <div class="form-group">
+                    <label for="hour">Hora da consulta:</label>
+                    <input type="text" class="form-control" id="hour" name="hour" placeholder="Insira o horario da consulta" required>
                 </div>
                 <div class="form-group">
                     <label for="observation">Observações:</label>
                     <textarea type="text" class="form-control" id="observation" name="observation" placeholder="Insira alguma observação" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn-btn-primary" >Cadastrar</button>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
 
         
