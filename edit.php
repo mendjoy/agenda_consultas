@@ -1,5 +1,6 @@
 <?php
     include_once("templates/header.php");
+    include_once("config/process.php");
 ?>
 
     <div class="container">
@@ -7,13 +8,14 @@
         <h1 id="main-title">Atualizar dados</h1>
 
             <form action="<?=$BASE_URL?>config/process.php" method="POST" id="create-form">
+            
 
                 <input type="hidden" name="type" value="edit">
                 <input type="hidden" name="id" value="<?= $contact['id'] ?>">
 
 
                 <div class="form-group">
-                    <label for="name">Nome do tutor:</label>
+                    <label for="name">Nome do tutor: <?= $contact["name"]?></label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome do tutor" value="<?= $contact['name'] ?>" required>
                 </div>
 
@@ -38,6 +40,7 @@
                     <textarea type="text" class="form-control" id="observation" name="observation" placeholder="Insira alguma observação" <?= $contact['observation'] ?> rows="3"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Atualizar</button>
+            
             </form>
 
         
