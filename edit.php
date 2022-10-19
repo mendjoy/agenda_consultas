@@ -15,7 +15,7 @@
 
 
                 <div class="form-group">
-                    <label for="name">Nome do tutor: <?= $contact["name"]?></label>
+                    <label for="name">Nome do tutor:</label>
                     <input type="text" class="form-control" id="name" name="name" placeholder="Digite o nome do tutor" value="<?= $contact['name'] ?>" required>
                 </div>
 
