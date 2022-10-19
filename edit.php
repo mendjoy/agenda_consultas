@@ -33,11 +33,11 @@
                 </div>
                 <div class="form-group">
                     <label for="hour">Hora da consulta:</label>
-                    <input type="text" class="form-control" id="hour" name="hour" placeholder="Insira o horario da consulta" <?= $contact['hour'] ?> required>
+                    <input type="text" class="form-control" id="hour" name="hour" placeholder="Insira o horario da consulta" value="<?= $contact['hour'] ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="observation">Observações:</label>
-                    <textarea type="text" class="form-control" id="observation" name="observation" placeholder="Insira alguma observação" <?= $contact['observation'] ?> rows="3"></textarea>
+                    <textarea type="text" class="form-control" id="observation" name="observation" placeholder="Insira alguma observação" rows="3"> <?= $contact['observations']?></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Atualizar</button>
             
