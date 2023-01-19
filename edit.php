@@ -28,16 +28,16 @@
                     <input type="text" class="form-control" id="animal" name="animal" placeholder="Digite o nome do animal"  value= "<?= $contact['animal'] ?>" required>
                 </div>
                 <div class="form-group">
-                    <label for="date">Data da consulta:</label>
-                    <input type="text" class="form-control" id="date" name="data" placeholder="Insira a data da consulta" value ="<?= $contact['day'] ?>" required>
+                    <label for="day">Data da consulta:</label>
+                    <input type="text" class="form-control" id="day" name="day" placeholder="Insira a data da consulta" value ="<?= $contact['day'] ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="hour">Hora da consulta:</label>
                     <input type="text" class="form-control" id="hour" name="hour" placeholder="Insira o horario da consulta" value="<?= $contact['hour'] ?>" required>
                 </div>
                 <div class="form-group">
-                    <label for="observation">Observações:</label>
-                    <textarea type="text" class="form-control" id="observation" name="observation" placeholder="Insira alguma observação" rows="3"> <?= $contact['observations']?></textarea>
+                    <label for="observations">Observações:</label>
+                    <textarea type="text" class="form-control" id="observations" name="observations" placeholder="Insira alguma observação" rows="3"> <?= $contact['observations']?></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Atualizar</button>
             

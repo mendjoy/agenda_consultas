@@ -22,6 +22,7 @@
                         <th scope="col">Telefone</th>
                         <th scope="col">Animal</th>
                         <th scope="col">Data</th>
+                        <th scope="col">Horário</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -34,6 +35,7 @@
                             <td scope="row"><?= $contact["phone"]?></td>
                             <td scope="row"><?= $contact["animal"]?></td>
                             <td scope="row"><?= $contact["day"]?></td>
+                            <td scope="row"><?= $contact["hour"]?></td>
                             <td class="actions">
                                 <a href="<?=$BASE_URL?>show.php?id=<?= $contact["id"]?>"><i class="fas fa-eye check-icon"></i></a>
                                 <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="far fa-edit edit-icon"></i></a> 

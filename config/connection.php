@@ -2,8 +2,8 @@
 
     $host = "localhost";
     $dbname = "agenda";
-    $user = "root0";
-    $pass = "";
+    $user = "root";
+    $pass = "62528623";
     
     try{
         $conn =  new PDO("mysql:host=$host; dbname=$dbname", $user, $pass);
